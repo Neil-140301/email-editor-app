@@ -1,0 +1,26 @@
+.nt-container{
+  background-color:#03071e;
+}
+
+.save-section-container{
+  background-color:#03071e;
+  height:15vh;
+}
+
+.w-85{
+  width: 85%;
+}
+
+.save-btn{
+  font-size:20px;
+}
+
+.link{
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.home-btn{
+  background-color: #ccff33;
+}

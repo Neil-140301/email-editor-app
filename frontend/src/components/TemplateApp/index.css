@@ -1,0 +1,11 @@
+.edit-btn{
+  border-left: #FFC145 solid 4px;
+  border-right: #FFC145 solid 4px;
+  border-radius: 10px;
+  font-size:18px;
+}
+
+.edit-btn:hover{
+  font-size: 20px;
+  box-shadow: 2px 2px 10px #e5e5e5;
+}

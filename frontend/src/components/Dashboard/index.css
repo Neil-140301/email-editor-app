@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+
+.bg-container {
+  background-color:#f8fafc;
+  height: 100vh;
+  display: flex;
+}
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  background-color: #0D0824;
+  width: 235px;
+  padding: 20px 10px;
+}
+
+.side-bar-title {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 26px;
+  font-weight: 700;
+  padding-left: 16px;
+}
+
+.options-container {
+  flex-grow: 1;
+}
+
+.options-section{
+  background-color:#212D40;
+  padding: 10px;
+  margin: 10px -10px;
+  border-top: #384558 solid 2px;
+  border-bottom: #384558 solid 2px;
+}
+
+.option-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 12px;
+}
+
+.active-option {
+  background-color: #296eff;
+  border-radius: 4px;
+}
+
+.option-icon {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.option-text {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-top:14px;  
+}
+
+.info-container{
+  background-color:#ffffff20;
+  padding:15px;
+  border: #ffffff35 solid 3px;
+  border-radius: 16px;
+  margin-bottom:35%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.info-details{
+  display: flex;
+  align-items:center;
+}
+
+.info-icon{
+  color: #ffffff;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.about-text{
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-top:14px;
+}
+
+.info-hr{
+  background-color:#ffffff;
+  height:2px;
+  margin-top:0;
+}
+
+.info{
+  color:#fff;
+  font-size: 14px;
+  text-align:justify;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.profile-name {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 12px;
+}
+
+.content {
+  flex-grow: 1;
+  padding-top: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  overflow-y: auto;
+}
+
+.section-title {
+  color: #002159;
+  font-family: "Open Sans";
+  font-size: 36px;
+}
+
+.templates-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.template-card{
+  background-size:cover;
+  width:250px;
+  height: 350px;
+  border-radius: 16px;
+  display:flex;
+  flex-direction:column;
+  justify-content: flex-end;
+  margin: 20px;
+}
+
+.card-1{
+  background-image: url("https://cdn.dribbble.com/users/289452/screenshots/15781268/media/068d273bc86e5a5412bbab5d367e2e19.jpg?compress=1&resize=1000x750");
+}
+
+.card-2{
+  background-image: url("https://cdn.dribbble.com/users/289452/screenshots/15781268/media/068d273bc86e5a5412bbab5d367e2e19.jpg?compress=1&resize=1000x750");
+}
+
+.card-3{
+  background-image: url("https://cdn.dribbble.com/users/2598141/screenshots/15785926/media/4566af6632a35c3c372d495c29fcac78.png?compress=1&resize=800x600");
+}
+
+.card-4{
+  background-image: url("https://cdn.dribbble.com/users/2182365/screenshots/15780710/media/8857802ef7920a7b2fa31ef59285c307.png");
+}
+
+.card-5{
+  background-image: url("https://cdn.dribbble.com/users/4382722/screenshots/15783475/media/c68f10ec0827188a5060a3fd7eeebc72.jpeg");
+}
+
+.template-details{
+  background-color:#fff;
+  padding: 20px;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.template-title {
+  color: #002159;
+  font-family: "Open Sans";
+  font-size: 22px;
+  padding-top:10px;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+
+.new-btn{
+  border:none;
+  border-radius: 6px;
+  cursor:pointer;
+  padding: 8px 24px;
+}
+
+.hr-line{
+  background-color:#28334A;
+  height:1px;
+  margin: 32px -40px;
+}
+
+.edit-btn{
+  border-left: #FFC145 solid 4px;
+  border-right: #FFC145 solid 4px;
+  border-radius: 10px;
+  font-size:18px;
+}
+
+.edit-btn:hover{
+  font-size: 20px;
+  box-shadow: 2px 2px 10px #e5e5e5;
+}
