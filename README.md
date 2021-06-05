@@ -19,3 +19,5 @@ The app has the following functionalities:
 - The `edit` button will direct the user to the `/edit-template/{id}` route.
   - The page will load the editor with the template JSON saved in the database.
   - You can make your changes and `save` them for next time.
+- Every template has a `download` button to download the html. 
+  - `Note` You should save the file before downloading.
