@@ -24,3 +24,9 @@
 .home-btn{
   background-color: #ccff33;
 }
+
+.download-btn{
+  background-color: #2EC0F9;
+  margin-left: 12px;
+  text-decoration: none;
+}

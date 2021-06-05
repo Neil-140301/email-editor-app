@@ -1,0 +1,16 @@
+.laptop-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.laptop-img {
+  width: 400px;
+}
+
+.laptop-heading{
+  color:#050517;
+  font-size:24px;
+  font-family: "Roboto"
+}

@@ -3,20 +3,24 @@ import EmailEditor from "react-email-editor"
 import './index.css'
 import axios from 'axios'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouseUser } from '@fortawesome/free-solid-svg-icons'
+import { faHouseUser, faDownload } from '@fortawesome/free-solid-svg-icons'
+import DownloadLink from "react-download-link";
 
 class NewTemplate extends Component {
   appearance = { theme: "dark", panels: {tools: {dock: "left"}}}
+  state = {htmlData: null}
 
   onClickSave = () => {
     const {match} = this.props
     const {id} = match.params
-    this.editor.saveDesign(design => {
+    this.editor.exportHtml(data => {
+      const {design, html} = data
       const newTemplate = {templateId: id, templateJson: JSON.stringify(design)}
       console.log(design)
       axios.post('/template',newTemplate)
+      this.setState({htmlData: html})
     })
-    alert('saved data')
+    alert('saved data and html')
   }
 
   onClickHome = () => {
@@ -40,6 +44,14 @@ class NewTemplate extends Component {
               <button className="btn home-btn" onClick={this.onClickHome} >
                 <FontAwesomeIcon icon={faHouseUser} />
               </button>
+              <DownloadLink
+                tagName="button"
+                label={<FontAwesomeIcon icon={faDownload} />}
+                filename='myTemplate.html'
+                exportFile={() => this.state.htmlData }
+                className="btn download-btn"
+                style={{color:'#ffffff'}}
+              />
             </div>
             <div className="ml-auto">
               <a className="link" href="https://unlayer.com/?utm_medium=web-editor&utm_campaign=editor-referral">

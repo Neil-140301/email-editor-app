@@ -1,18 +1,20 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import {BrowserRouter,Route, Switch} from 'react-router-dom'
 import NewTemplate from './components/NewTemplate'
 import EditTemplate from './components/EditTemplate'
 import NotFound from './components/NotFound'
 import Dashboard from './components/Dashboard'
-
+import ProtectedRoute from './components/ProtectedRoute'
+import LaptopOnly from './components/LaptopOnly'
 
 
 const App = () => (
   <BrowserRouter>
     <Switch>
-      <Route exact path="/" component={Dashboard} />
-      <Route exact path="/template/:id" component={NewTemplate} />
-      <Route exact path="/edit-template/:id" component={EditTemplate} />
+      <ProtectedRoute exact path="/" component={Dashboard} />
+      <ProtectedRoute exact path="/template/:id" component={NewTemplate} />
+      <ProtectedRoute exact path="/edit-template/:id" component={EditTemplate} />
+      <Route exact path="/size-error" component={LaptopOnly} />
       <Route component={NotFound} />
     </Switch>
   </BrowserRouter>
