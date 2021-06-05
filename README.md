@@ -3,7 +3,7 @@
 
 <br/>
 <div style="text-align: center;">
-    <img src="https://media.giphy.com/media/qII4a9VhkMO31070Nx/giphy.gif" alt="emoji-game-output" style="max-width:90%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
+    <img src="https://res.cloudinary.com/dl3nzdely/image/upload/c_scale,w_670/v1622907346/email-editor-app_gudh8i.gif" alt="emoji-game-output" style="max-width:85%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
 </div>
 <br/>
 
