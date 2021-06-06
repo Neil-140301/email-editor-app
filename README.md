@@ -1,3 +1,5 @@
+Source : `github` https://github.com/christopherdodd/shopify-koa-server
+
 # shopify-koa-server
 A minimalist framework for creating Shopify authorised applications with Koa.js
 
@@ -12,5 +14,4 @@ Once you set up your app in your partner account, add the API key and secret key
 ## 'public' Directory
 The public folder is what is mounted by the app and displayed on the front-end. Use this to build out a Single Page Application (SPA) with whichever front-end framework you desire.
 
-## 'server' Directory
-The server folder holds a pre-built API client for using the GraphQL Admin API as well as templates for storing your API queries, API mutations and Koa routes.
+
