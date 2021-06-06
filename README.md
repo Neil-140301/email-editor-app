@@ -1,4 +1,4 @@
-Source : `github` https://github.com/christopherdodd/shopify-koa-server
+Source code : `github` https://github.com/christopherdodd/shopify-koa-server
 
 # shopify-koa-server
 A minimalist framework for creating Shopify authorised applications with Koa.js
