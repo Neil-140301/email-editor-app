@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 //mongoose
-mongoose.connect("mongodb+srv://neil:UK3X7CRK-yvt9f8@cluster0.g5a3e.mongodb.net/emailDb");
+mongoose.connect("mongodb+srv://neil:neil140301@cluster0.g5a3e.mongodb.net/emailDb");
 
 //data schema and model
 const templateSchema = {
